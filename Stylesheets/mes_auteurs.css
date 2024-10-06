@@ -1,0 +1,84 @@
+@import url("stylesheet.css");
+
+
+
+/* milieu */
+.scroll{
+    overflow-y: scroll;
+}
+main{
+    width: 100%;
+    margin: auto;
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.blog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    padding: 0 10px;
+}
+.info{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.livre img{
+    height: 200px;
+    width: 160px;
+    filter: drop-shadow(0 0 5px #333);
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+}
+.voir{
+    color: blue;
+    font-size: 20px;
+}
+.voir:hover{
+    color: red;
+}
+
+.info h3{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.livre-plus{
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../livre/auteur/a1.jpg) no-repeat center;
+    background-size: cover;
+    border: solid 2px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 160px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 5px #555);
+    vertical-align: middle;
+    margin-top: 25px;
+}
+.livre-plus:hover{
+    background: url(../livre/auteur/a1.jpg) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.livre-plus button{
+    all: unset;
+    font-size: 20px;
+}
+.livre-plus a{
+    color: #fff;
+}
+

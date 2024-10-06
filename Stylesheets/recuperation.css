@@ -1,0 +1,73 @@
+@import url(stylesheet.css);
+
+body{
+    background: url(../livre/cover/c2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+form{
+    margin: 3% auto;
+    width: 50%;
+}
+
+fieldset{
+    text-align: center;
+    border: none;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65));
+    box-shadow: 5px 5px 8px #000;
+}
+form h2{
+   margin-top: 20px;
+   color: #fff;
+   text-decoration: underline;
+}
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+}
+.champ{
+    width: 330px;
+    height: 300px;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
+label{
+   font-weight: 500;
+   font-size: 20px;
+   color: #fff;
+}
+.chp1 label{
+    line-height: 70px;
+    height: 200px;
+}
+.champ input{
+    height: 40px;
+    padding-left: 7px;
+    width: 100%;
+    font-size: 20px;
+    margin: 8px 0;
+    color: #fff;
+    border: none ;
+    outline: none;
+    background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65));
+}
+form button{
+    height: 35px;
+    padding: 0 10px;
+    background: linear-gradient(lawngreen, green);
+    border: none;
+    outline: none;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 7%;
+    border-radius: 5px;
+}
+form button:hover{
+    background: linear-gradient(deeppink, mediumvioletred);
+    color: #fff;
+}

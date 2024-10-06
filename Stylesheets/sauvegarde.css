@@ -1,0 +1,54 @@
+@import url(stylesheet.css);
+
+.scroll{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* première partie du milieu */
+
+.row{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.blog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 25px;
+    width: 95%;
+    margin: auto;
+    margin-top: 12px;
+    
+}
+.info{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+}
+.info h3{
+    font-weight: 500;
+}
+.livre::before{
+    content: '\f02e';
+    font-family: 'Font Awesome 5 Free';
+    position: relative;
+    z-index: 1;
+    top: 30px;
+    left: 65px;
+    font-weight: 600;
+    font-size: 23px;
+    color: rgba(0,0,0,0.65);
+}
+.livre{
+    width: 165px;
+    margin: 5px 10px;
+}
+.livre img{
+    height: 210px;
+    width: 165px;
+    filter: drop-shadow(0 0 5px #333);
+    cursor: pointer;
+    transition: .7s;
+}

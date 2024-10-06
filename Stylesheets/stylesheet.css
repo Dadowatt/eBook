@@ -1,0 +1,733 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+   /* font-family: "Poppins", sans-serif, "Open Sans", "Lato"; */
+    font-family: 'Segoe UI', Tahoma, 'Poppins', Verdana, sans-serif; 
+}
+
+:is(section, aside) button:hover{
+    background: linear-gradient(deeppink, palevioletred);
+    color: #fff;
+}
+button a{
+    color: #000;
+}
+button:hover{
+    color: deeppink;
+}
+button a:hover{
+    color: #fff;
+}
+img{
+    transition: .7s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+body{
+    background-color:antiquewhite ;
+    width: 100%;
+    padding-top: 145px;
+}
+
+/* la partie de l'entêtes. Ici nous avons 3 nav englobés par la balise header */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+header ul{
+    display: flex;
+}
+header li{
+    margin: 0 .6rem;
+    cursor: pointer;
+}
+header a{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+header i:hover{
+    color: red;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_1{
+
+    height: 2.5rem;
+    padding: 0 .6rem;
+    color: #fff;
+    background-color: #000;
+}
+.nav_1 a{
+    color: slategray;
+}
+.nav_1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.nav_1 select{
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.nav_1 option{
+    all: unset;
+    color: #fff;
+    background-color: #000;
+}
+.log a{
+    color: red;
+}
+.right span{
+    margin-right: .3rem;
+}
+.nav_2{
+    width: 100%;
+    height: 4rem;
+    padding: 0 .6rem;
+    background-color:gainsboro;
+}
+.nav_2 h2{
+    color: #555;
+}
+.nav_2 h2 span{
+    color: rgb(8, 143, 8);
+}
+
+.nav_2 a{
+    color: green;
+    font-size: 1.6rem;
+}
+.nav_2 .fa-angle-down{
+    color: #444;
+    position: relative;
+    bottom: .3rem;
+}
+.filtre{
+    display: flex;
+}
+.filtre select{
+    border: none;
+    font-weight: bold;
+    outline: none;
+    background-color: floralwhite;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+.filtre option{
+    all: unset;
+    background-color: floralwhite;
+}
+.filtre input{
+    all: unset;
+    padding: .3rem .6rem;
+    font-weight: bold;
+    color: #444;
+    border-radius: 1.6rem;
+    filter: drop-shadow(0 0 3px #333);
+    background: linear-gradient(green,lawngreen);
+}
+.filtre input:hover{
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(deeppink, palevioletred);
+}
+.search_barre{
+    filter: drop-shadow(0 0 3px #333);
+    background-color: floralwhite;
+    width: 27rem;
+    padding: .5rem .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_barre .tab{
+    all: unset;
+    width: 100%;
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+.nav_3 li:hover{
+    background-color: lawngreen;
+    color: #333;
+    border-radius: .3rem;
+    padding: 0 .3rem;
+}
+.nav_3 a:hover{
+    color: #333;
+}
+.nav_3{
+    width: 100%;
+    justify-content: center;
+    height: 2.8rem;
+    background-color: rgb(8, 143, 8);
+    color: #f3f3f3;
+}
+.nav_3 li{
+    line-height: 2.3rem;
+    font-size: 1rem;
+    padding: 0 .3rem;
+    transition: .7s;
+}
+.nav_3 .tri{
+   margin-right: 2%;
+}
+.nav_3 select{
+    color: #f3f3f3;
+    cursor: pointer;
+    padding: .19rem 0;
+    text-align: center;
+    outline: none;
+    background-color: rgb(8, 143, 8);
+    font-size: 1.3rem;
+    border: solid 2px #f3f3f3;
+}
+.nav_3 a{
+    color: #f3f3f3;
+}
+.nav_3 span{
+    margin-right: .3rem;
+}
+
+/* La div de class container englobe les deux barres latérales et la première balise main du milieu de notre page */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.scroll{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.caption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background-color: lightgreen;
+    color: #333;
+    height:2.5rem;
+    margin: auto;
+    margin-top: 1.3rem;
+    padding: 0 1.3rem;
+}
+.caption h2{
+    font-weight: 600;
+}
+.row{
+    text-align: center;
+}
+.caption button{
+    all: unset;
+    color: blue;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-decoration: 2px underline;
+}
+.caption button:hover{
+    background: transparent;
+    color: red;
+}
+.etoile{
+    color: lawngreen;
+    margin-top: .3rem;
+}
+.etoile bold{
+    color: #333;
+    margin-left: .3rem;
+    font-weight: bold;
+}
+.etoile span{
+    color: lightblue;
+}
+.blog{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 1.8rem;
+    padding: 0 .5rem;
+    width: 100%;
+}
+
+.livre-1{
+    display: block;
+}
+.livre-1 img{
+    height: auto;
+    width: 10.6rem;
+    filter: drop-shadow(0 0 5px #333);
+    cursor: pointer;
+    transition: .7s;
+}
+.livre{
+    margin: 1.3rem 0;
+}
+.livre-2, .livre-3{
+    width: 28rem;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    filter: drop-shadow(2px 2px 5px #888);
+}
+.livre-2 h3{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.livre-2 img{
+    height: 16.3rem;
+    width: 11.6rem;
+    filter: drop-shadow(0 0 5px #555);
+    cursor: pointer;
+    transition: .7s;
+}
+.livre-3{
+    width: 20rem;
+}
+.livre-3 img{
+    width: 9rem;
+    height: 12rem;
+    filter: drop-shadow(0 0 5px #555);
+    cursor: pointer;
+    transition: 1s;
+}
+.info{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: .6rem;
+}
+
+.info h3{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.plus{
+    all: unset;
+    padding: .3rem 1.6rem;
+    cursor: pointer;
+    border-radius: 1.6rem;
+    font-size: 1.3rem;
+    border: solid 2px green;
+    display: block;
+    margin: 1.3rem auto;
+}
+
+.desc{
+    padding: .3rem .5rem;
+    width: 65%;
+    text-align: justify;
+}
+.desc h4, .desc h3{
+    text-align: left;
+    text-transform: capitalize;
+}
+.desc .fa-bookmark{
+    float: right;
+    margin-left: .3rem;
+}
+.desc .fa-heart{
+    margin-left: .5rem;
+    margin-top: .8rem;
+    vertical-align: middle;
+}
+:is(.desc) .fa-bookmark, .fa-heart{
+    color: lightsteelblue;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.desc .fa-bookmark:hover{
+    color: green;
+}
+.desc .fa-heart:hover{
+    color: red;
+}
+.desc button{
+    all: unset;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px #333);
+    border-radius: 1.6rem;
+    margin-top: .8rem;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    width: 5rem;
+    padding: .19rem .3rem;
+    background: linear-gradient(green,lawngreen);
+}
+/* partie des thèmes */
+
+.themes{
+    height: 10.3rem;
+     width: 18rem;
+     margin: 1.3rem 0;
+     cursor: pointer;
+     transition: .7s;
+ }
+ .themes h2{
+     display: flex;
+     justify-content: center;
+     line-height: 10.3rem;
+     text-transform: capitalize;
+     font-size: 1.6rem;
+ }
+ .themes a{
+     color:rgb(109, 206, 11);
+     font-weight: 600;
+ }
+ .themes a:hover{
+     color: deeppink;
+ }
+ .theme-1{
+     background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c10.jpg) no-repeat center;
+     background-size: cover;
+ }
+ .theme-1:hover{
+     background: url(../livre/cover/c10.jpg) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ .theme-2{
+     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c3.jpg) no-repeat center;
+     background-size: cover;
+ }
+ .theme-2:hover{
+     background: url(../livre/cover/c3.jpg) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ .theme-3{
+     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c11.jpg) no-repeat center;
+     background-size: cover;
+ }
+ .theme-3:hover{
+     background: url(../livre/cover/c11.jpg) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ .theme-4{
+     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c8.png) no-repeat center;
+     background-size: cover;
+ }
+ .theme-4:hover{
+     background: url(../livre/cover/c8.png) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ .theme-5{
+     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c12.jpg) no-repeat center;
+     background-size: cover;
+ }
+ .theme-5:hover{
+     background: url(../livre/cover/c12.jpg) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ .theme-6{
+     background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url(../livre/cover/c7.jpg) no-repeat center;
+     background-size: cover;
+ }
+ .theme-6:hover{
+     background: url(../livre/cover/c7.jpg) no-repeat center;
+     background-size: cover;
+     filter: drop-shadow(0 0 5px #333);
+ }
+ 
+/* partie de la barre latérale gauche. Chacune des 2 barres latérales sont englobé par la balise aside */
+
+aside{
+    margin-top: 5px;
+    background-color: #fff;
+}
+.left_bar{
+    margin-top: 10px;
+}
+.lateral_gauche{
+    width: 20%;
+    min-height: 100vh;
+    height: fit-content;
+    padding: .6rem;
+}
+aside i{
+    cursor: pointer;
+}
+.left_bar ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+}
+.left_bar li{
+    text-transform: capitalize;
+    padding: .3rem .6rem;
+}
+.left_bar li:hover{
+    background-color: lightgreen;
+    transition: .3s;
+    cursor: pointer;
+}
+.left_bar span{
+    margin-right: .6rem;
+    margin-bottom: .6rem;
+}
+.left_bar .title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #666;
+}
+.left_bar a{
+    color: #333;
+    font-weight: bold;
+}
+.left_bar i{
+    color: green;
+    font-size: 1.3rem;
+}
+
+/* partie de la barre latérale droite */
+
+.lateral_droite{
+    width: 25%;
+    min-height: 90vh;
+    height: auto;
+    padding: .6rem .3rem;
+}
+.right_bar{
+    margin-top: .6rem;
+}
+.lateral_droite h3, h4{
+    font-weight: 500;
+    color: #333;
+}
+.lateral_droite small{
+    color: grey;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    cursor: pointer;
+    text-align: center;
+    margin-top: .3rem;
+}
+.notif{
+    border: solid 1px lightgrey;
+    margin-top: .8rem;
+}
+.titre img{
+    height: 7rem;
+    width: 5.3rem;
+    cursor: pointer;
+    transition: .7s;
+}
+.description{
+    padding: 3px;
+}
+.description button{
+    all: unset;
+    display: block;
+    margin: auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 5rem;
+    height: 1.6rem;
+    background: linear-gradient(lawngreen, green);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.3rem;
+    filter: drop-shadow(0 0 3px #555);
+}
+.s2{
+    margin-top: 1.3rem;
+}
+.list img{
+    height: 4.06rem;
+    width: 4.06rem;
+    border-radius: 1.3rem;
+    border: solid 1px #555;
+    cursor: pointer;
+    transition: .7s;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: .9rem;
+}
+figure{
+    text-align: center;
+    margin: .5rem 0;
+}
+.list figcaption{
+    font-weight: 500;
+    color: #333;
+    font-size: .9rem;
+}
+
+.both{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* partie du pied de page */
+
+footer{
+    width: 100%;
+    background-color:rgb(53, 49, 49);
+    margin-top: 5%;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+.footer_section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1.3rem .9rem;
+    width: 80%;
+}
+.col h3{
+    margin-bottom: .6rem;
+    border-bottom: solid 2px green;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: .3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.col ul{
+    margin: 1.3rem 0;
+}
+.col li{
+    margin-bottom: .6rem;
+}
+.col input{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: .3rem;
+}
+.col textarea {
+    max-height: 4rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: .3rem .5rem;
+}
+.col input[type="submit"] {
+    outline: none;
+    border: none;
+    margin-top: .3rem;
+    background-color: green;
+    padding: .3rem;
+    line-height: .3rem;
+    color: #f3f3f3;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.col input[type="submit"]:hover{
+    background-color: deeppink;
+}
+.col label{
+    color: #555;
+}
+.col a{
+    color: darkgreen;
+}
+.col li:hover{
+    color: deeppink;
+    cursor: pointer;
+}
+.col span{
+    margin-right: .6rem;
+}
+.propos{
+    width: 25rem;
+    text-align: justify;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 14.4rem;
+    margin-top: .6rem;
+}
+.row-4 .plus{
+    margin-bottom: .6rem;
+}
+.icons li{
+    border: solid 1px lightblue;
+    height: 2.7rem;
+    width: 2.7rem;
+    padding: .3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    background-color: floralwhite;
+    font-size: 1.4rem;
+}
+.icons li:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.regle{
+    text-align: center;
+    margin: auto;
+    padding: .3rem 0;
+    border-top: solid 2px grey;
+    width: 50%;
+    color: dimgrey;
+}
+
+/* responsivité du site */
+
+@media screen and (min-width:320px) and (max-width:900px){
+    body{
+        margin-top: 15%;
+    }
+    aside,.nav_3 span, .nav_1, .nav_3 select{
+        display: none;
+    }
+    .nav_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: .3rem 0;
+        height: 9rem;
+    }
+    .container{
+        margin-top: -8%;
+    }
+    .nav_3{
+        padding: 0 .3rem;
+    }
+    .nav-3 ul{
+        margin: 0 1rem;
+    }
+    .nav_3 li{
+        width: 100%;
+        justify-content: center;
+    }
+}

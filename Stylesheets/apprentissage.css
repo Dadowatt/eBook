@@ -1,0 +1,65 @@
+@import url(stylesheet.css);
+
+/* milieu */
+.scroll{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.couverture{
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../livre/cover/quran.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 45vh;
+}
+.couverture h1{
+    font-size: 5vw;
+    text-align: center;
+    color: lightcyan;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.couverture ul{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    margin-top: 10%;
+}
+.couverture a{
+    text-decoration: underline;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.couverture a:hover{
+    color: red;
+}
+.blog{
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0 5px;
+}
+.livre{
+    width: 310px;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0;
+    filter: drop-shadow(2px 2px 5px #888);
+}
+.livre img{
+    width: 140px;
+    height: 190px;
+    filter: drop-shadow(0 0 5px #555);
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+

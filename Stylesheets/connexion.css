@@ -1,0 +1,88 @@
+@import url("stylesheet.css");
+
+body{
+    background: url(../livre/cover/c2.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 155px;
+    height: 100vh;
+}
+
+
+
+/* partie de la page de conenexion */
+
+form a{
+    color: lawngreen;
+}
+form a:hover{
+    color: deeppink;
+}
+fieldset{
+    border: none;
+    margin-top: 25px;
+}
+form{
+    margin: auto;
+    margin-top: 3%;
+    padding: 5px 25px;
+    color: #fff;
+    background:rgba(0, 0, 0 ,0.65);
+    box-shadow: 5px 5px 10px #000;
+    width: 400px;
+    height: 450px;
+}
+
+legend{
+    text-align: center;
+    color: lawngreen;
+    font-size: 30px;
+    font-weight: bold;
+}
+form input[type="text"], input[type="password"]{
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    margin: 7px 0 20px 0;
+    outline: none;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+form .option{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+form input[type="checkbox"] {
+    cursor: pointer;
+}
+form input[type="button"] {
+    border: none;
+    border-radius: 5px;
+    background-color: lawngreen;
+    margin-top: 25px;
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+form ::placeholder{
+    color: #333;
+}
+form input[type="button"]:hover{
+    background-color: deeppink;
+    color: #000;
+}
+form label{
+    margin: 10px 0 10px 7px;
+    font-size: 20px;
+}
+form .nouveau{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}

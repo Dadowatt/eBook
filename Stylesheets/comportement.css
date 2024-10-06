@@ -1,0 +1,74 @@
+@import url("stylesheet.css");
+
+
+/* milieu */
+.scroll{
+    overflow-y: scroll;
+}
+.couverture{
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../livre/cover/cov2.jpg) no-repeat top;
+    background-size: cover;
+    height: 50vh;
+}
+.couverture h1{
+    font-size: 5vw;
+    text-align: center;
+    color: lightcyan;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.genre{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 8%;
+}
+.genre a:hover{
+    color: red;
+}
+.couverture li{
+    line-height: 40px;
+}
+.couverture a{
+    text-decoration: underline;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.row{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.blog{
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0 5px;
+}
+.livre{
+    width: 310px;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    margin: 20px 0;
+    filter: drop-shadow(2px 2px 5px #888);
+}
+.livre img{
+    width: 140px;
+    height: 190px;
+    filter: drop-shadow(0 0 5px #555);
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+

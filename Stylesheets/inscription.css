@@ -1,0 +1,75 @@
+@import url("stylesheet.css");
+
+body{
+    background: url(../livre/cover/c2.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 140px;
+    height: 100vh;
+}
+.wrap{
+    width: 90%;
+    padding: 0 25px;
+    margin: auto;
+}
+.row1, .row2{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+   /* margin-top: 2%;*/
+}
+
+fieldset{
+    padding-right: 10px;
+    margin: auto;
+    height: 75vh;
+    background: rgba(0,0,0,0.65);
+    box-shadow: 5px 5px 10px #000;
+    border: none;
+}
+legend{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+    color: lawngreen;
+    text-transform: uppercase;
+}
+form{  
+    margin: auto;
+    width: 35%;
+}
+form label{
+    display: block;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+}
+form input{
+    all: unset;
+    width: 100%;
+    padding: 0 5px;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255,255,255,0.5);
+}
+
+form ::placeholder{
+    color: #333;
+}
+form input[type="submit"] {
+    margin-top: 5%;
+    text-align: center;
+    background-color: lawngreen;
+    color: #333;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+form input[type="submit"]:hover{
+    background-color: deeppink;
+    color: #fff;
+}

@@ -1,0 +1,189 @@
+@import url(stylesheet.css);
+
+
+/* partie du milieu */
+.profil{
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../livre/cover/cover.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding: 15px 10px;
+    height:fit-content;
+    margin: auto;
+    height: fit-content;
+}
+.div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0 8px;
+    margin: auto;
+}
+.profil a{
+    font-size: 25px;
+    color: #fff;
+}
+.profil a:hover{
+    color: deeppink;
+}
+.etoile{
+    color: lawngreen;
+}
+.etoile span{
+    color: lightblue;
+}
+.etoile b{
+    color: #fff;
+    margin-left: 8px;
+    font-weight: normal;
+    font-size: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+    height: 365px;
+    background-color: lawngreen;
+}
+.info button{
+    all: unset;
+    padding: 8px 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: green;
+}
+.info button:hover{
+    background-color: deeppink;
+}
+.info img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .8s;
+}
+.bio button{
+    all: unset;
+    padding: 8px 10px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bio{
+    margin: 15px 0;
+    width: 550px;
+    text-align: justify;
+    line-height: 25px;
+    color: #fff;
+    padding: 0 5px;
+}
+.bio p{
+    margin: 10px 0;
+    font-size: 18px;
+}
+.bio button{
+    background-color: lawngreen;
+}
+.caption select{
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.books{
+    width: 100%;
+    padding: 5px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.blog{
+    margin: 10px 15px;
+    width: 200px;
+    text-align: center;
+}
+.blog img{
+    width: 175px;
+    height: 220px;
+    filter: drop-shadow(0 0 5px #555);
+    transition: .8s;
+}
+.blog .etoile{
+    color: lawngreen;
+}
+.blog p span{
+    color: lightblue;
+    margin-left: 5px;
+}
+.blog p b{
+    color: #444;
+    
+}
+.row2{
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.autre{
+    width: 100%;
+    padding: 20px 0;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-top: solid 3px lightgrey;
+}
+.autre h2{
+    margin: 10px 0;
+    color: green;
+    font-weight: 600;
+}
+.row3{
+    width: 150px;
+    text-align: center;
+}
+.row3 a:hover{
+    color: orangered;
+}
+.row3 p{
+    margin: 8px 0;
+}
+.row3 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 2px green;
+    transition: .8s;
+}
+.angle{
+    font-size: 30px;
+    color: dimgrey;
+    cursor: pointer;
+}
+.angle:hover{
+    color: orangered;
+}
+.blog2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 8px 5px;
+    height: fit-content;
+}
+

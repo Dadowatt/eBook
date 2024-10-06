@@ -1,0 +1,28 @@
+@import url("stylesheet.css");
+
+
+/* La div de class container englobe les deux barres latéral et la première balise main du milieu de notre page */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#nouveau, #populaire, #themes, #recommander{
+    padding-top: 13%;
+}
+.scroll{
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    scroll-behavior: smooth;
+    margin-top: -8%; 
+}
+#populaire, #themes, #recommander{
+    margin-top: -10%;
+}
+.desc .text{
+    margin-top: .4rem;
+}
+
+
